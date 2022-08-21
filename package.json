@@ -1,0 +1,23 @@
+{
+  "name": "autopractice",
+  "version": "1.0.0",
+  "description": "cypressTests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolmacheta/autoPractice.git"
+  },
+  "author": "Karol Macheta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karolmacheta/autoPractice/issues"
+  },
+  "homepage": "https://github.com/karolmacheta/autoPractice#readme",
+  "dependencies": {
+    "cypress": "^10.6.0",
+    "cypress-real-events": "^1.7.1"
+  }
+}
