@@ -1,4 +1,4 @@
-describe('Automation Exercise Website Health Check', () => {
+describe('Test Case 1: Register User', () => {
   beforeEach(() => {
     cy.visit('/')
   })
@@ -6,7 +6,6 @@ describe('Automation Exercise Website Health Check', () => {
   it('open the page and check url', () => {
     cy.checkIfMainPageOpen();
     cy.checkMainPageUrl();
-    cy.log('Pentagon zhakowany');
   })
 
 })
