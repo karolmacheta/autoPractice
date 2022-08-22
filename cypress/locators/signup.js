@@ -1,6 +1,6 @@
 export const signupPage = {
-    signupnameInput: 'signup-name',
-    signupemailInput: 'signup-email',
+    signupNameInput: 'signup-name',
+    signupEmailInput: 'signup-email',
     loginEmailInput: 'login-email',
     loginPassInput: 'login-password',
     loginBtn: 'login-button',

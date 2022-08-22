@@ -16,8 +16,8 @@ describe('Test Case 1: Register User', () => {
   })
 
   it('input signup credentials', () => {
-    cy.getByQaData(signupPage.nameInput).should('be.visible').type('testUser01');
-    cy.getByQaData(signupPage.emailInput).should('be.visible').type('testUser01@test.com');
+    cy.getByQaData(signupPage.signupNameInput).should('be.visible').type('testUser01');
+    cy.getByQaData(signupPage.signupEmailInput).should('be.visible').type('testUser01@test.com');
     cy.getByQaData(signupPage.signupBtn).should('be.visible').click();
   })
 
