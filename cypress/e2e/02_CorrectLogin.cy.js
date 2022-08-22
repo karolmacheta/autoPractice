@@ -2,7 +2,7 @@ import { mainPage } from "../locators/main";
 import { signupPage } from "../locators/signup";
 import testUser from "../fixtures/User.json"
 
-describe('Test Case 1: Register User', () => {
+describe('Test Case 2: Login User with correct email and password', () => {
 
   it('open the page and check url', () => {
     cy.visit('/')
@@ -22,7 +22,7 @@ describe('Test Case 1: Register User', () => {
     cy.getByQaData(signupPage.loginBtn).should('be.visible').click();
   })
 
-  it('idk what next', () => {
+  it('check is user successfully logged in', () => {
     cy.log('TODO')
   })
 })
