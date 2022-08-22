@@ -2,10 +2,10 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    "baseUrl" : "http://automationpractice.com",
+    "baseUrl" : "https://www.automationexercise.com/",
     "chromeWebSecurity": true,
-    "viewportHeight" : 1080,
-    "viewportLenght" : 1920,
+    "viewportHeight" : 1000,
+    "viewportLenght" : 1000,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
