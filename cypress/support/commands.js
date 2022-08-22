@@ -24,6 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+Cypress.Commands.add('getByQaData', (selector) => {
+    return cy.get(`[data-qa=${selector}]`)
+  })
+
 Cypress.Commands.add('checkMainPageUrl', () => {
     cy.url().should('eq', 'https://www.automationexercise.com/');
     cy.log('The URL adress is validated correctly')
