@@ -2,7 +2,7 @@ import { mainPage } from "../locators/main";
 import { signupPage } from "../locators/signup";
 import testUser from "../fixtures/User.json"
 
-describe('Test Case 1: Register User', () => {
+describe('Test Case 2: Login User with correct email and password', () => {
 
   it('open the page and check url', () => {
     cy.visit('/')
@@ -22,8 +22,15 @@ describe('Test Case 1: Register User', () => {
     cy.getByQaData(signupPage.loginBtn).should('be.visible').click();
   })
 
-  it('idk what next', () => {
-    cy.log('TODO')
+  it('check is user successfully logged in', () => {
+    cy.contains(`Logged in as ${testUser.name}`).should('be.visible')
+  })
+
+  it('log out', () => {
+    cy.get(mainPage.logoutBtn).should('be.visible').click();
+    cy.url().should('eq', 'https://www.automationexercise.com/logout');
+    cy.visit('/');
+    cy.contains(`Logged in as ${testUser.name}`).should('not.exist');
   })
 })
 

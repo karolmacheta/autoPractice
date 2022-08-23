@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
+      "resolveJsonModule" : true,
       "target": "es5",
       "lib": ["es5", "dom"],
       "types": ["cypress", "node"]
     },
-    "include": ["**/*.ts"]
+    "include": ["**/*.ts", "cypress/e2e/02_CorrectLogin.cy.js", "cypress/support/e2e.js", "cypress/support/commands.js", "cypress/e2e/00_HealthCheck.cy.js", "cypress/e2e/01_RegisterUser.cy.js"]
   }
