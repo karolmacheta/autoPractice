@@ -23,7 +23,14 @@ describe('Test Case 2: Login User with correct email and password', () => {
   })
 
   it('check is user successfully logged in', () => {
-    cy.log('TODO')
+    cy.contains(`Logged in as ${testUser.name}`).should('be.visible')
+  })
+
+  it('log out', () => {
+    cy.get(mainPage.logoutBtn).should('be.visible').click();
+    cy.url().should('eq', 'https://www.automationexercise.com/logout');
+    cy.visit('/');
+    cy.contains(`Logged in as ${testUser.name}`).should('not.exist');
   })
 })
 
