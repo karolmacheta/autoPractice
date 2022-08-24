@@ -4,9 +4,7 @@ import { signupPage } from "../locators/signup";
 describe('Test Case 1: Register User', () => {
 
   it('open the page and check url', () => {
-    cy.visit('/')
-    cy.checkIfMainPageOpen();
-    cy.checkMainPageUrl();
+    cy.openMainPage();
   })
 
   it('go to login page', () => {
