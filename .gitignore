@@ -1,3 +1,5 @@
 1-getting-started/
 2-advanced-examples/
 node_modules/
+cypress/screenshots/
+cypress/videos/

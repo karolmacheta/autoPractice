@@ -20,7 +20,7 @@ Cypress.Commands.add('checkIfMainPageOpen', () => {
 })
 
 Cypress.Commands.add('openMainPage', () => {
-    cy.visit('/')
+    cy.visit('https://www.automationexercise.com')
     cy.checkIfMainPageOpen();
     cy.checkMainPageUrl();
 });
