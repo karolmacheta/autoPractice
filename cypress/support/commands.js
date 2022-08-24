@@ -4,7 +4,7 @@ import { mainPage } from '../locators/main';
 
 Cypress.Commands.add('getByQaData', (selector) => {
     return cy.get(`[data-qa=${selector}]`)
-  })
+})
 
 Cypress.Commands.add('checkMainPageUrl', () => {
     cy.url().should('eq', 'https://www.automationexercise.com/');
@@ -18,3 +18,9 @@ Cypress.Commands.add('checkIfMainPageOpen', () => {
     cy.get(mainPage.itemList).should('be.visible');
     cy.log('Main page is loaded correctly')
 })
+
+Cypress.Commands.add('openMainPage', () => {
+    cy.visit('/')
+    cy.checkIfMainPageOpen();
+    cy.checkMainPageUrl();
+});

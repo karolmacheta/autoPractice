@@ -5,9 +5,7 @@ import testUser from "../fixtures/User.json"
 describe('Test Case 2: Login User with correct email and password', () => {
 
   it('open the page and check url', () => {
-    cy.visit('/')
-    cy.checkIfMainPageOpen();
-    cy.checkMainPageUrl();
+    cy.openMainPage();
   })
 
   it('go to login page', () => {
