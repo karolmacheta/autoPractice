@@ -20,7 +20,7 @@ describe('Test Case 5: Register User with existing email', () => {
     cy.getByQaData(signupPage.signupBtn).should('be.visible').click();
   })
 
-  it('check if correct error message is displayed for wrong emial/pass', () => {
+  it('check if correct error message is displayed for already existing email in db', () => {
     cy.contains('Email Address already exist!').should('be.visible')
   })
 
