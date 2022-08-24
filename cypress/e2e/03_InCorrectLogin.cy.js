@@ -19,7 +19,7 @@ describe('Test Case 3: Login User with incorrect email and password', () => {
     cy.getByQaData(signupPage.loginBtn).should('be.visible').click();
   })
 
-  it('check if correct error message is displayed', () => {
+  it('check if correct error message is displayed for wrong emial/pass', () => {
     cy.contains('Your email or password is incorrect!').should('be.visible')
   })
 
